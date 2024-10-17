@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7526D7A7-223A-45BB-8752-45D85683BAB8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAuthJWT.MinimalAPI", "src\SampleAuthJWT.MinimalAPI\SampleAuthJWT.MinimalAPI.csproj", "{43383EBF-6B63-4DA5-B898-374F3C8F41C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAuthJWT.Shared", "src\SampleAuthJWT.Shared\SampleAuthJWT.Shared.csproj", "{72326030-A0CF-48B8-91BF-B8D64D2704CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAuthJWT.DataAccessLayer", "src\SampleAuthJWT.DataAccessLayer\SampleAuthJWT.DataAccessLayer.csproj", "{28640E0F-C74F-447A-9AC0-99D3831F53C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleAuthJWT.BusinessLayer", "src\SampleAuthJWT.BusinessLayer\SampleAuthJWT.BusinessLayer.csproj", "{0DC74EA2-5E20-47DE-9814-2F6B2C11B5ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{43383EBF-6B63-4DA5-B898-374F3C8F41C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43383EBF-6B63-4DA5-B898-374F3C8F41C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43383EBF-6B63-4DA5-B898-374F3C8F41C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43383EBF-6B63-4DA5-B898-374F3C8F41C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72326030-A0CF-48B8-91BF-B8D64D2704CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72326030-A0CF-48B8-91BF-B8D64D2704CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72326030-A0CF-48B8-91BF-B8D64D2704CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72326030-A0CF-48B8-91BF-B8D64D2704CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28640E0F-C74F-447A-9AC0-99D3831F53C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28640E0F-C74F-447A-9AC0-99D3831F53C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28640E0F-C74F-447A-9AC0-99D3831F53C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28640E0F-C74F-447A-9AC0-99D3831F53C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DC74EA2-5E20-47DE-9814-2F6B2C11B5ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC74EA2-5E20-47DE-9814-2F6B2C11B5ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC74EA2-5E20-47DE-9814-2F6B2C11B5ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC74EA2-5E20-47DE-9814-2F6B2C11B5ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
