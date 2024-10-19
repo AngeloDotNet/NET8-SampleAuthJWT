@@ -1,8 +1,9 @@
 # NET8 - Sample Authentication with Token JWT
 
-Template example that makes it easy to create endpoints for Microsoft Identity authentication with the JWT token.
+About
+Example that simplifies the creation of endpoints for Microsoft Identity authentication with JWT token, developing with Minimal API (instead of controllers).
 
-This example was created using Marco Minerva's repositories as an example
+This template was created using Marco Minerva's repositories as an example
 
 - https://github.com/marcominerva/SimpleAuthentication 
 - https://github.com/marcominerva/TwoFactorAuthenticationSample)
