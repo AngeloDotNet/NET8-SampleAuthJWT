@@ -1,12 +1,3 @@
-using Microsoft.AspNetCore.DataProtection;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using MinimalHelpers.Routing;
-using SampleAuthJWT.DataAccessLayer;
-using SampleAuthJWT.DataAccessLayer.Entities;
-using SimpleAuthentication;
-using TinyHelpers.AspNetCore.Extensions;
-
 namespace SampleAuthJWT.MinimalAPI;
 
 public class Program
@@ -64,8 +55,6 @@ public class Program
         });
 
         var app = builder.Build();
-
-        //await DatabaseExtension.ConfigureDatabaseAsync(app.Services);
 
         app.UseHttpsRedirection();
         app.UseExceptionHandler();
