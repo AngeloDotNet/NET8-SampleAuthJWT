@@ -1,9 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-using SampleAuthJWT.DataAccessLayer.Entities;
-
-namespace SampleAuthJWT.DataAccessLayer;
+﻿namespace SampleAuthJWT.DataAccessLayer;
 
 public class AuthenticationDbContext(DbContextOptions options) : IdentityDbContext<ApplicationUser, ApplicationRole, Guid,
     IdentityUserClaim<Guid>, ApplicationUserRole, IdentityUserLogin<Guid>, IdentityRoleClaim<Guid>, IdentityUserToken<Guid>>(options)

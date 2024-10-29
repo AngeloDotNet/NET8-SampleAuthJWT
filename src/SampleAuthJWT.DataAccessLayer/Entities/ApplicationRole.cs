@@ -1,6 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-
-namespace SampleAuthJWT.DataAccessLayer.Entities;
+﻿namespace SampleAuthJWT.DataAccessLayer.Entities;
 
 public class ApplicationRole : IdentityRole<Guid>
 {

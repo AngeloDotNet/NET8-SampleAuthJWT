@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.DataProtection.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
-
-namespace SampleAuthJWT.DataAccessLayer;
+﻿namespace SampleAuthJWT.DataAccessLayer;
 
 public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : AuthenticationDbContext(options), IDataProtectionKeyContext
 {
