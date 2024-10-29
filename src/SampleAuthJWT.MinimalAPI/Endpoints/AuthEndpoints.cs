@@ -4,16 +4,17 @@ public class AuthEndpoints : IEndpointRouteHandlerBuilder
 {
     public static void MapEndpoints(IEndpointRouteBuilder endpoints)
     {
-        endpoints.MapPost("/register", APIExtension.RegisterAsync)
+        var identityApi = endpoints
+            .MapGroup("/api/auth")
+            .WithTags("Identity API")
             .WithOpenApi();
 
-        endpoints.MapPost("/login-qrcode", APIExtension.LoginQrCodeAsync)
-            .WithOpenApi();
+        identityApi.MapPost("/register", APIExtension.RegisterAsync);
 
-        endpoints.MapGet("/generate-qrcode", APIExtension.GenerateQrCodeAsync)
-            .WithOpenApi();
+        identityApi.MapPost("/login-qrcode", APIExtension.LoginQrCodeAsync);
 
-        endpoints.MapPost("/validate-qrcode", APIExtension.ValidateQrCodeAsync)
-            .WithOpenApi();
+        identityApi.MapGet("/generate-qrcode", APIExtension.GenerateQrCodeAsync);
+
+        identityApi.MapPost("/validate-qrcode", APIExtension.ValidateQrCodeAsync);
     }
 }

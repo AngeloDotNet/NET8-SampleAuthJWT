@@ -4,8 +4,12 @@ public class MeEndpoints : IEndpointRouteHandlerBuilder
 {
     public static void MapEndpoints(IEndpointRouteBuilder endpoints)
     {
-        endpoints.MapGet("/api/me", APIExtension.GetMe)
+        var testApi = endpoints
+            .MapGroup("/api/profile")
             .RequireAuthorization()
+            .WithTags("Profile API")
             .WithOpenApi();
+
+        testApi.MapGet("/me", APIExtension.GetMe);
     }
 }
