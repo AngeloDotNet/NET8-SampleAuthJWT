@@ -1,10 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.Extensions.DependencyInjection;
-using SampleAuthJWT.DataAccessLayer;
-
-namespace SampleAuthJWT.BusinessLayer.Extensions;
+﻿namespace SampleAuthJWT.BusinessLayer.Extensions;
 
 public static class DatabaseExtension
 {
@@ -24,8 +18,6 @@ public static class DatabaseExtension
 
         await strategy.ExecuteAsync(async () =>
         {
-            // Create the database if it does not exist.
-            // Do this first so there is then a database to start a transaction against.
             if (!await dbCreator.ExistsAsync())
             {
                 await dbCreator.CreateAsync();
@@ -39,7 +31,6 @@ public static class DatabaseExtension
 
         await strategy.ExecuteAsync(async () =>
         {
-            // Run migration in a transaction to avoid partial migration if it fails.
             await using var transaction = await dbContext.Database.BeginTransactionAsync();
 
             await dbContext.Database.MigrateAsync();
