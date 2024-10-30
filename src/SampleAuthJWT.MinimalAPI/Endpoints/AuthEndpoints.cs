@@ -11,6 +11,12 @@ public class AuthEndpoints : IEndpointRouteHandlerBuilder
 
         identityApi.MapPost("/register", APIExtension.RegisterAsync);
 
+        identityApi.MapPost("/login", APIExtension.LoginAsync);
+
+        identityApi.MapPost("/validate-token", APIExtension.ValidateTokenAsync);
+
+        identityApi.MapPost("/refresh-token", APIExtension.RefreshTokenAsync);
+
         identityApi.MapPost("/login-qrcode", APIExtension.LoginQrCodeAsync);
 
         identityApi.MapGet("/generate-qrcode", APIExtension.GenerateQrCodeAsync);
